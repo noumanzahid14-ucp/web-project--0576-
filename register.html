@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Pixels & Power</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">PIXELS<span>&POWER</span></a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="register.html" class="active">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Heading -->
+    <section class="page-heading">
+        <h1>CREATE YOUR <span>ACCOUNT</span></h1>
+        <p>Join the Pixels & Power gaming community today.</p>
+    </section>
+
+    <!-- Registration Form -->
+    <main class="register-container">
+
+        <div class="form-intro">
+            <h2>Gamer Registration</h2>
+            <p>Fill in the details below to create your gaming profile.</p>
+        </div>
+
+        <form action="#" method="post" enctype="multipart/form-data">
+
+            <!-- Personal Information -->
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" name="fullname"
+                        placeholder="Enter your full name"
+                        required minlength="3" maxlength="40">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username"
+                        placeholder="Choose a gaming username"
+                        required minlength="4" maxlength="20">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email"
+                        placeholder="example@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password"
+                        placeholder="Create a password"
+                        required minlength="8">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="birthdate">Date of Birth</label>
+                        <input type="date" id="birthdate" name="birthdate"
+                        required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="website">Gaming Profile URL</label>
+                        <input type="url" id="website" name="website"
+                        placeholder="https://example.com">
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Gaming Preferences -->
+            <fieldset>
+                <legend>Gaming Preferences</legend>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="platform">Preferred Gaming Platform</label>
+                        <select id="platform" name="platform" required>
+                            <option value="" selected disabled>
+                                Select your platform
+                            </option>
+                            <option value="pc">PC Gaming</option>
+                            <option value="playstation">PlayStation</option>
+                            <option value="xbox">Xbox</option>
+                            <option value="mobile">Mobile Gaming</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="genre">Favorite Game Genre</label>
+                        <select id="genre" name="genre">
+                            <option value="action">Action</option>
+                            <option value="adventure">Adventure</option>
+                            <option value="racing">Racing</option>
+                            <option value="sports">Sports</option>
+                            <option value="strategy">Strategy</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>How often do you play games?</label>
+
+                    <div class="radio-options">
+                        <label>
+                            <input type="radio" name="frequency"
+                            value="daily" checked> Daily
+                        </label>
+
+                        <label>
+                            <input type="radio" name="frequency"
+                            value="weekly"> Weekly
+                        </label>
+
+                        <label>
+                            <input type="radio" name="frequency"
+                            value="occasionally"> Occasionally
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>What gaming accessories do you own?</label>
+
+                    <div class="checkbox-options">
+                        <label>
+                            <input type="checkbox" name="accessories"
+                            value="mouse"> Gaming Mouse
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="accessories"
+                            value="keyboard"> Mechanical Keyboard
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="accessories"
+                            value="headset"> Gaming Headset
+                        </label>
+
+                        <label>
+                            <input type="checkbox" name="accessories"
+                            value="controller"> Controller
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Additional Details -->
+            <fieldset>
+                <legend>Additional Details</legend>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="age">Your Age</label>
+                        <input type="number" id="age" name="age"
+                        min="13" max="80" placeholder="Enter your age">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="playtime">Preferred Gaming Time</label>
+                        <input type="time" id="playtime" name="playtime">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="color">Favorite Gaming Color</label>
+                    <input type="color" id="color" name="color"
+                    value="#39ff14">
+                </div>
+
+                <div class="form-group">
+                    <label for="experience">
+                        Gaming Experience Level
+                    </label>
+                    <input type="range" id="experience" name="experience"
+                    min="1" max="10" value="5">
+                    <div class="range-labels">
+                        <span>Beginner</span>
+                        <span>Pro Gamer</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="profile">Upload Profile Picture</label>
+                    <input type="file" id="profile" name="profile"
+                    accept="image/*">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Tell Us About Your Gaming Experience</label>
+                    <textarea id="message" name="message" rows="5"
+                    placeholder="Write something about yourself..."
+                    maxlength="300"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="membership">Membership Type</label>
+                    <input type="text" id="membership" value="Free Gamer"
+                    readonly>
+                </div>
+
+                <div class="form-group">
+                    <label for="coupon">Special Coupon</label>
+                    <input type="text" id="coupon" value="Coming Soon"
+                    disabled>
+                </div>
+            </fieldset>
+
+            <!-- Terms and Conditions -->
+            <div class="terms">
+                <label>
+                    <input type="checkbox" name="terms" required>
+                    I agree to the Terms & Conditions.
+                </label>
+            </div>
+
+            <!-- Submit and Reset Buttons -->
+            <div class="form-buttons">
+                <button type="submit">CREATE ACCOUNT</button>
+                <button type="reset" class="reset-btn">RESET FORM</button>
+            </div>
+
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 PIXELS&POWER. ALL RIGHTS RESERVED.</p>
+        <p>Power Your Game. Own Your World.</p>
+    </footer>
+
+</body>
+</html>
