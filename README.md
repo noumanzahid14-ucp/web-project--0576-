@@ -73,9 +73,9 @@ AI tools were used as learning assistants during this project.
 
 Assignment 1 – Home, Media and Register pages.
 
-**Developed by:** [Your Full Name]
+**Developed by:** Nouman Zahid
 
-**Roll Number:** [Your Roll Number]
+**Roll Number:** L1F24BSCS0576
 
 **Course:** Web Technologies
 
