@@ -31,31 +31,49 @@ ul {
     list-style: none;
 }
 
-
 /* NAVIGATION BAR */
 
 .navbar {
+    height: 80px;
+    padding: 0 6%;
     background-color: #101510;
-    padding: 20px 7%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #263326;
+    flex-wrap: nowrap;
+    gap: 25px;
 }
 
 .logo {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
-    font-weight: bold;
+    font-weight: 700;
     letter-spacing: 1px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.logo span {
+    color: #39ff14;
 }
 
 .nav-links {
     display: flex;
-    gap: 35px;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+    flex-wrap: nowrap;
 }
 
 .nav-links a {
-    font-size: 15px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    white-space: nowrap;
     transition: 0.3s;
 }
 
@@ -72,7 +90,6 @@ ul {
     font-weight: bold;
 }
 
-
 /* HERO SECTION */
 
 #hero {
@@ -82,11 +99,7 @@ ul {
     align-items: center;
     justify-content: space-between;
     gap: 40px;
-    background: linear-gradient(
-        120deg,
-        #080b09,
-        #142018
-    );
+    background: linear-gradient(120deg, #080b09, #142018);
 }
 
 .hero-content {
@@ -158,7 +171,6 @@ h1 span {
     box-shadow: 0 0 25px rgba(57, 255, 20, 0.2);
 }
 
-
 /* PRODUCT SECTION */
 
 #products {
@@ -224,7 +236,6 @@ h2 {
     font-size: 14px;
 }
 
-
 /* WHY CHOOSE US */
 
 #why-us {
@@ -253,17 +264,12 @@ h2 {
     color: #dce5dc;
 }
 
-
 /* JOIN SECTION */
 
 #join-section {
     text-align: center;
     padding: 75px 20px;
-    background: linear-gradient(
-        120deg,
-        #101810,
-        #1b301b
-    );
+    background: linear-gradient(120deg, #101810, #1b301b);
 }
 
 #join-section h2 {
@@ -274,7 +280,6 @@ h2 {
     color: #b5bdb5;
     margin-bottom: 25px;
 }
-
 
 /* FOOTER */
 
@@ -313,10 +318,22 @@ footer p {
     margin-top: 15px;
 }
 
-
 /* RESPONSIVE DESIGN */
 
 @media screen and (max-width: 900px) {
+    .navbar {
+        height: auto;
+        min-height: 80px;
+        flex-direction: column;
+        padding: 18px 4%;
+        gap: 18px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 18px;
+    }
 
     #hero {
         flex-direction: column;
@@ -330,18 +347,23 @@ footer p {
     .product-container {
         grid-template-columns: repeat(2, 1fr);
     }
-
 }
 
 @media screen and (max-width: 600px) {
-
     .navbar {
-        flex-direction: column;
         gap: 18px;
     }
 
     .nav-links {
-        gap: 20px;
+        gap: 14px;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+    }
+
+    .logo {
+        font-size: 25px;
     }
 
     .nav-button {
@@ -359,18 +381,4 @@ footer p {
     h2 {
         font-size: 27px;
     }
-
-}
-
-/* Same navbar font on all pages */
-.nav-links a {
-    font-weight: 400 !important;
-}
-
-/* Same navbar font on all pages */
-.nav-links a {
-    font-family: Arial, sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    text-decoration: none;
 }
