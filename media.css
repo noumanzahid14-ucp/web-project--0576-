@@ -32,12 +32,12 @@ ul {
     list-style: none;
 }
 
-
 /* NAVIGATION BAR */
 
 .navbar {
+    height: 80px;
+    padding: 0 6%;
     background-color: #101510;
-    padding: 20px 7%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,19 +45,39 @@ ul {
     position: sticky;
     top: 0;
     z-index: 100;
+    flex-wrap: nowrap;
+    gap: 25px;
 }
 
 .logo {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
-    font-weight: bold;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.logo span {
+    color: #39ff14;
 }
 
 .nav-links {
     display: flex;
-    gap: 35px;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+    flex-wrap: nowrap;
 }
 
 .nav-links a {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    white-space: nowrap;
     transition: 0.3s;
 }
 
@@ -74,15 +94,13 @@ ul {
     font-weight: bold;
 }
 
-
 /* PAGE BANNER */
 
 .page-banner {
     text-align: center;
     padding: 100px 20px;
     background-image:
-        linear-gradient(rgba(0, 0, 0, 0.78),
-        rgba(0, 0, 0, 0.85)),
+        linear-gradient(rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.85)),
         url("https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1600");
     background-size: cover;
     background-position: center;
@@ -97,7 +115,6 @@ ul {
 .page-banner p:last-child {
     color: #c1c9c1;
 }
-
 
 /* CATEGORY MENU */
 
@@ -133,7 +150,6 @@ ul {
     color: black;
 }
 
-
 /* COLLECTION SECTIONS */
 
 .collection-section {
@@ -154,7 +170,6 @@ ul {
     color: #aab3aa;
 }
 
-
 /* PRODUCT CONTAINER */
 
 .product-container {
@@ -163,7 +178,6 @@ ul {
     flex-wrap: wrap;
     gap: 25px;
 }
-
 
 /* PRODUCT CARDS */
 
@@ -224,7 +238,6 @@ ul {
     background-color: white;
 }
 
-
 /* MEDIA SHOWCASE */
 
 .media-showcase {
@@ -253,7 +266,6 @@ ul {
     width: 100%;
     max-width: 500px;
 }
-
 
 /* PRODUCT COMPARISON TABLE */
 
@@ -287,7 +299,6 @@ th {
 tr:hover {
     background-color: #1d2b1e;
 }
-
 
 /* GAMING TIPS */
 
@@ -337,7 +348,6 @@ tr:hover {
     color: #c1c9c1;
 }
 
-
 /* FOOTER */
 
 footer {
@@ -375,10 +385,22 @@ footer p {
     margin-top: 15px;
 }
 
-
 /* RESPONSIVE DESIGN */
 
 @media screen and (max-width: 900px) {
+    .navbar {
+        height: auto;
+        min-height: 80px;
+        flex-direction: column;
+        padding: 18px 4%;
+        gap: 18px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 18px;
+    }
 
     .product-card {
         width: 45%;
@@ -387,18 +409,19 @@ footer p {
     .page-banner h1 {
         font-size: 35px;
     }
-
 }
 
 @media screen and (max-width: 600px) {
-
-    .navbar {
-        flex-direction: column;
-        gap: 18px;
+    .nav-links {
+        gap: 14px;
     }
 
-    .nav-links {
-        gap: 18px;
+    .nav-links a {
+        font-size: 16px;
+    }
+
+    .logo {
+        font-size: 25px;
     }
 
     .nav-button {
@@ -424,18 +447,4 @@ footer p {
     .tip-item {
         width: 100%;
     }
-
-}
-
-/* Same navbar font on all pages */
-.nav-links a {
-    font-weight: 400 !important;
-}
-
-/* Same navbar font on all pages */
-.nav-links a {
-    font-family: Arial, sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    text-decoration: none;
 }
